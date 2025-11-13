@@ -1,0 +1,195 @@
+import React from 'react';
+import { Product, SocialLink } from './types';
+
+/*
+  MANUAL CONTENT MANAGEMENT
+  ===========================
+
+  Welcome to your content management file! You can easily update your
+  website's products and collections by editing the `INITIAL_PRODUCTS`
+  array below.
+
+  How it works:
+  - Each object in the array represents a single product.
+  - The `category` field (e.g., 'Bags', 'Shoes') automatically creates
+    a collection page and adds links in the header and on the homepage.
+  - The first image in `imageUrls` is used as the main display image
+    for the product and for its category on the homepage.
+  - To add a new product, simply copy an existing product object, paste it
+    into the array, and change its details (remember to give it a new unique `id`).
+  - To add a new category, just add a product with a new category name.
+    The website will update automatically.
+*/
+
+const optimizeUrl = (url: string) => `https://images.weserv.nl/?url=${encodeURIComponent(url.replace('https://images.weserv.nl/?url=', ''))}&w=800&q=75&output=webp`;
+const optimizeCloudinaryUrl = (url: string) => `https://images.weserv.nl/?url=${encodeURIComponent(url)}&w=800&q=75&output=webp`;
+
+
+export const INITIAL_PRODUCTS: Product[] = [
+  {
+    id: 1,
+    name: 'The Executive Briefcase',
+    description: 'Hand-stitched\n from full-grain leather, this briefcase combines classic style with modern functionality.\nPerfect for the discerning professional.',
+    price: '$299.99',
+    imageUrls: [
+      optimizeUrl('images.unsplash.com/photo-1594223274512-ad4803739b7c'),
+      optimizeUrl('images.unsplash.com/photo-1588196749107-1a76c5b96783'),
+      optimizeCloudinaryUrl('res.cloudinary.com/dvgrdwofp/image/upload/v1762281330/cld-sample-5.jpg'),
+      optimizeUrl('images.unsplash.com/photo-1555938459-67362bb31c96'),
+    ],
+    category: 'Bags',
+  },
+  {
+    id: 10,
+    name: 'The Crimson Satchel',
+    description: 'A statement piece crafted from vibrant, full-grain crimson leather. This satchel features polished gold-tone hardware and a surprisingly spacious interior, making it the perfect blend of elegance and practicality.',
+    price: '$249.99',
+    imageUrls: [
+      optimizeUrl('i.imgur.com/2s0aB3Y.jpeg'),
+      optimizeUrl('i.imgur.com/2s0aB3Y.jpeg'),
+    ],
+    category: 'Bags',
+  },
+  {
+    id: 2,
+    name: 'Artisan Leather Wallet',
+    description: 'A minimalist wallet designed for everyday carry. Ages beautifully, developing a unique patina over time. Holds up to 8 cards.',
+    price: '$79.99',
+    imageUrls: [optimizeUrl('images.unsplash.com/photo-1619118399583-16a3a50a11ac')],
+    category: 'Accessories',
+  },
+  {
+    id: 3,
+    name: 'The Journeyman Belt',
+    description: 'Length: 42 Inches\nWidth: 40mm\nThickness: 3.5/4mm\nA sleek black leather belt with fine edge stitching and a matte rectangular buckle, perfect for smart-casual or formal wear.',
+    price: '$119.99',
+    imageUrls: [optimizeUrl('images.unsplash.com/photo-1618512496248-67e6a31c59a3')],
+    category: 'Belts',
+  },
+  {
+    id: 4,
+    name: 'Classic Biker Jacket',
+    description: 'Embody timeless cool with our premium leather biker jacket. Tailored for a perfect fit and built to last generations.',
+    price: '$499.99',
+    imageUrls: [optimizeUrl('images.unsplash.com/photo-1551028719-00167b16eac5')],
+    category: 'Apparel',
+  },
+  {
+    id: 5,
+    name: 'Heritage Watch Strap',
+    description: 'Upgrade your timepiece with our handcrafted leather watch strap. Soft, comfortable, and effortlessly elegant.',
+    price: '$59.99',
+    imageUrls: [optimizeUrl('images.unsplash.com/photo-1618828121113-3c05e1a613aa')],
+    category: 'Accessories',
+  },
+  {
+    id: 6,
+    name: 'The Weekender Duffle',
+    description: 'Your perfect travel companion. Spacious enough for a weekend getaway, crafted from rugged yet supple leather.',
+    price: '$399.99',
+    imageUrls: [
+      optimizeUrl('images.unsplash.com/photo-1587576842185-35515e01b4c4'),
+      optimizeUrl('images.unsplash.com/photo-1631211153995-16350d216b23'),
+      optimizeUrl('images.unsplash.com/photo-1566150905458-1bf1ba194f5f'),
+    ],
+    category: 'Bags',
+  },
+  {
+    id: 7,
+    name: 'The Aviator Jacket',
+    description: 'Inspired by classic pilot jackets, this piece is crafted from premium goatskin leather for a soft, broken-in feel from day one.',
+    price: '$549.99',
+    imageUrls: [optimizeUrl('images.unsplash.com/photo-1611893459397-90a18241ad78')],
+    category: 'Apparel',
+  },
+  {
+    id: 8,
+    name: 'The Wanderer Boot',
+    description: 'Classic leather boots for any adventure. Made with Goodyear welt construction for durability and resoling.',
+    price: '$349.99',
+    imageUrls: [optimizeUrl('images.unsplash.com/photo-1525966222134-fc3011dae251')],
+    category: 'Shoes',
+  },
+  {
+    id: 9,
+    name: 'Classic Loafers',
+    description: 'Hand-sewn from a single piece of calfskin leather, these loafers offer unparalleled comfort and timeless style.',
+    price: '$249.99',
+    imageUrls: [optimizeUrl('images.unsplash.com/photo-1603921326215-3b999c0a0a9c')],
+    category: 'Shoes',
+  },
+  {
+    id: 11,
+    name: 'The Urban Derby',
+    description: 'A modern take on a classic silhouette. The Urban Derby is crafted from supple, premium leather and features a durable rubber sole for all-day comfort. Dress it up or down, this versatile shoe is a wardrobe essential.',
+    price: '$229.99',
+    imageUrls: [optimizeUrl('images.unsplash.com/photo-1560343090-f0409e92791a')],
+    category: 'Shoes',
+  },
+  {
+    id: 12,
+    name: "The Nomad's Backpack",
+    description: "Crafted for the modern adventurer, this backpack combines rugged durability with sophisticated style. Made from premium full-grain leather, it features multiple compartments for all your essentials.",
+    price: '$379.99',
+    imageUrls: [
+      optimizeUrl('images.unsplash.com/photo-1553062407-98eeb6e0e946'),
+      optimizeUrl('images.unsplash.com/photo-1566453547072-358b543711b2'),
+      optimizeUrl('images.unsplash.com/photo-1599554378822-243b8b6c050d'),
+    ],
+    category: 'Bags',
+  },
+  {
+    id: 13,
+    name: 'The Classic Fedora',
+    description: 'A timeless fedora crafted from premium wool felt, perfect for any occasion.',
+    price: '$129.99',
+    imageUrls: [optimizeUrl('images.unsplash.com/photo-1533055642149-52f275a5395a')],
+    category: 'Hats',
+  }
+];
+
+const socialIconClasses = "h-6 w-6 text-brand-light group-hover:text-brand-tan transition-colors duration-300";
+
+export const SOCIAL_LINKS: SocialLink[] = [
+  {
+    name: 'Email',
+    url: 'mailto:moziqwears@gmail.com',
+    icon: (
+      <svg className={socialIconClasses} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+    ),
+  },
+  {
+    name: 'WhatsApp',
+    url: 'https://wa.me/+923241601181', // Replace with your WhatsApp number
+    icon: (
+      <svg className={socialIconClasses} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01s-.521.074-.792.372c-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+    ),
+  },
+  {
+    name: 'Facebook',
+    url: 'https://www.facebook.com/profile.php?id=61583091034070', // Replace with your Facebook page
+    icon: (
+        <svg className={socialIconClasses} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-1.5c-1 0-1.5.5-1.5 1.5V12h3l-.5 3h-2.5v6.8c4.56-.93 8-4.96 8-9.8z"/></svg>
+    ),
+  },
+  {
+    name: 'Instagram',
+    url: 'https://instagram.com/moziqwear.55', // Replace with your Instagram profile
+    icon: (
+        <svg className={socialIconClasses} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 2H16C19.3137 2 22 4.68629 22 8V16C22 19.3137 19.3137 22 16 22H8C4.68629 22 2 19.3137 2 16V8C2 4.68629 4.68629 2 8 2ZM12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM12 9C13.6569 9 15 10.3431 15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9ZM16.5 6C15.9477 6 15.5 6.44772 15.5 7C15.5 7.55228 15.9477 8 16.5 8C17.0523 8 17.5 7.55228 17.5 7C17.5 6.44772 17.0523 6 16.5 6Z"/>
+        </svg>
+    ),
+  },
+  {
+    name: 'TikTok',
+    url: 'https://tiktok.com/@moziq.wears', // Replace with your TikTok username
+    icon: (
+      <svg className={socialIconClasses} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64v-3.45a6.34 6.34 0 0 0-5.86 6.33 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V10.2a4.83 4.83 0 0 1 3.77-3.51v-3.45a8.25 8.25 0 0 0-3.45-.63Z"/>
+      </svg>
+    ),
+  },
+];
