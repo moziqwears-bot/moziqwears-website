@@ -34,7 +34,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   {
     id: 2,
     name: 'Black Leather Belt',
-    description: 'Lehght: 42 Inches\n  Width: 40mm \n Thickness: 3.5/4mm',
+    description: 'Lehght: 42 Inches\n  Width: 40mm \n Thickness: 3.5/4mm \n\n Stylish black leather belt with a matte buckle — perfect for both casual and formal wear.',
     imageUrls: [
       'https://res.cloudinary.com/dvgrdwofp/image/upload/v1762879924/WhatsApp_Image_2025-11-10_at_3.33.59_PM_1_vn73u0.jpg',
       'https://res.cloudinary.com/dvgrdwofp/image/upload/v1762879925/WhatsApp_Image_2025-11-10_at_3.34.00_PM_zhlkdv.jpg',
