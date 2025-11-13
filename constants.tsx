@@ -50,7 +50,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763044292/WhatsApp_Image_2025-11-13_at_12.43.43_PM_hnb27e.jpg'
     ],
       category: 'Gloves',
-  }
+  },
 
   {
     id: 4,
