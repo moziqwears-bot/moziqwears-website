@@ -52,6 +52,15 @@ export const INITIAL_PRODUCTS: Product[] = [
       category: 'Gloves',
   }
 
+  {
+    id: 4,
+    name: 'Black Leather Driving Gloves',
+    description: 'Sleek black leather gloves featuring perforated detailing and a secure strap closure — perfect for stylish and comfortable driving.',
+    imageUrls: [
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763044292/WhatsApp_Image_2025-11-13_at_12.43.43_PM_hnb27e.jpg'
+    ],
+      category: 'Belts',
+  }
   
 ];
 
