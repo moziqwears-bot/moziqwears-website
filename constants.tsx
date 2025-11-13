@@ -54,13 +54,25 @@ export const INITIAL_PRODUCTS: Product[] = [
 
   {
     id: 4,
-    name: 'Black Leather Driving Gloves',
-    description: 'Sleek black leather gloves featuring perforated detailing and a secure strap closure — perfect for stylish and comfortable driving.',
+    name: 'Leather Belt',
+    description: 'Classic leather belt with a polished buckle, designed for durability and timeless style — perfect for both casual and formal outfits.',
     imageUrls: [
-      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763049786/WhatsApp_Image_2025-11-13_at_8.49.23_PM_px3qoa.jpg'
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763049786/WhatsApp_Image_2025-11-13_at_8.49.23_PM_px3qoa.jpg',
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763050779/WhatsApp_Image_2025-11-13_at_8.49.23_PM_1_hthkcp.jpg'
     ],
       category: 'Belts',
-  }
+  },
+   {
+    id: 5,
+    name: 'Brown Leather Wallet',
+    description: 'Classic brown leather wallet with a smooth finish and multiple compartments — combining timeless style with everyday practicality.',
+    imageUrls: [
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763050779/WhatsApp_Image_2025-11-13_at_8.53.29_PM_xdcijl.jpg',
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763050779/WhatsApp_Image_2025-11-13_at_8.53.28_PM_xsux7a.jpg',
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763050779/WhatsApp_Image_2025-11-13_at_8.53.28_PM_xsux7a.jpg'
+    ],
+      category: 'Wallets',
+  },
   
 ];
 
