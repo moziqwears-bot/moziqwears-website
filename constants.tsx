@@ -41,7 +41,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       'https://res.cloudinary.com/dvgrdwofp/image/upload/v1762879757/WhatsApp_Image_2025-11-10_at_3.34.00_PM_2_od6wgj.jpg'
     ],
     category: 'Belts',
-  }
+  },
 {
     id: 3,
     name: 'Black Leather Driving Gloves',
@@ -49,7 +49,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     imageUrls: [
       'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763044292/WhatsApp_Image_2025-11-13_at_12.43.43_PM_hnb27e.jpg'
     ],
-    category: 'Gloves',
+      category: 'Gloves',
   }
 
   
