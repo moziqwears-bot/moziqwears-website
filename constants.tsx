@@ -69,7 +69,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     imageUrls: [
       'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763050779/WhatsApp_Image_2025-11-13_at_8.53.29_PM_xdcijl.jpg',
       'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763050779/WhatsApp_Image_2025-11-13_at_8.53.28_PM_xsux7a.jpg',
-      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763050779/WhatsApp_Image_2025-11-13_at_8.53.28_PM_xsux7a.jpg'
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763050779/WhatsApp_Image_2025-11-13_at_8.53.28_PM_1_ha2shb.jpg'
     ],
       category: 'Wallets',
   },
