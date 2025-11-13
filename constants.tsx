@@ -5,16 +5,16 @@ import { Product, SocialLink } from './types';
   MANUAL CONTENT MANAGEMENT
   ===========================
 
-  id: 10,
-    name: 'name the item',
-    description: 'some description',
-    price: '$249.99',
+ {
+    id: 1,
+    name: ' ABC',
+    description: 'ABCDEF.',
     imageUrls: [
       'https://res.cloudinary.com/1',
-      'https://res.cloudinary.com/2',
-      'https://res.cloudinary.com/3'
     ],
-    category: 'Belts',
+    category: 'Gloves',
+  },
+  
 */
 
 const optimizeUrl = (url: string) => `https://images.weserv.nl/?url=${encodeURIComponent(url.replace('https://images.weserv.nl/?url=', ''))}&w=800&q=75&output=webp`;
