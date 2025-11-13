@@ -73,7 +73,17 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
       category: 'Wallets',
   },
-  
+
+  {
+    id: 6,
+    name: 'Muzamil',
+    description: 'tmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm',
+    imageUrls: [
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763058773/WhatsApp_Image_2025-11-13_at_8.53.29_PM_xnyczr.jpg',
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763050779/WhatsApp_Image_2025-11-13_at_8.53.28_PM_xsux7a.jpg',
+    ],
+      category: 'Wallets',
+  },
 ];
 
 const socialIconClasses = "h-6 w-6 text-brand-light group-hover:text-brand-tan transition-colors duration-300";
