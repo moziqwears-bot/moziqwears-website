@@ -5,20 +5,16 @@ import { Product, SocialLink } from './types';
   MANUAL CONTENT MANAGEMENT
   ===========================
 
-  Welcome to your content management file! You can easily update your
-  website's products and collections by editing the `INITIAL_PRODUCTS`
-  array below.
-
-  How it works:
-  - Each object in the array represents a single product.
-  - The `category` field (e.g., 'Bags', 'Shoes') automatically creates
-    a collection page and adds links in the header and on the homepage.
-  - The first image in `imageUrls` is used as the main display image
-    for the product and for its category on the homepage.
-  - To add a new product, simply copy an existing product object, paste it
-    into the array, and change its details (remember to give it a new unique `id`).
-  - To add a new category, just add a product with a new category name.
-    The website will update automatically.
+  id: 10,
+    name: 'name the item',
+    description: 'some description',
+    price: '$249.99',
+    imageUrls: [
+      'https://res.cloudinary.com/1',
+      'https://res.cloudinary.com/2',
+      'https://res.cloudinary.com/3'
+    ],
+    category: 'Belts',
 */
 
 const optimizeUrl = (url: string) => `https://images.weserv.nl/?url=${encodeURIComponent(url.replace('https://images.weserv.nl/?url=', ''))}&w=800&q=75&output=webp`;
@@ -28,22 +24,17 @@ const optimizeCloudinaryUrl = (url: string) => `https://images.weserv.nl/?url=${
 export const INITIAL_PRODUCTS: Product[] = [
   {
     id: 1,
-    name: 'The Executive Briefcase',
-    description: 'Hand-stitched\n from full-grain leather, this briefcase combines classic style with modern functionality.\nPerfect for the discerning professional.',
-    price: '$299.99',
+    name: 'Black Leather Gloves',
+    description: 'Premium black leather gloves with a sleek finish, offering warmth, comfort, and timeless style for everyday or formal wear.',
     imageUrls: [
-      optimizeUrl('images.unsplash.com/photo-1594223274512-ad4803739b7c'),
-      optimizeUrl('images.unsplash.com/photo-1588196749107-1a76c5b96783'),
-      optimizeCloudinaryUrl('res.cloudinary.com/dvgrdwofp/image/upload/v1762281330/cld-sample-5.jpg'),
-      optimizeUrl('images.unsplash.com/photo-1555938459-67362bb31c96'),
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763044293/WhatsApp_Image_2025-11-13_at_12.45.55_PM_gas6lt.jpg',
     ],
-    category: 'Bags',
+    category: 'Gloves',
   },
   {
     id: 2,
-    name: 'Black Belt',
+    name: 'Black Leather Belt',
     description: 'Lehght: 42 Inches\n  Width: 40mm \n Thickness: 3.5/4mm',
-    price: '$249.99',
     imageUrls: [
       'https://res.cloudinary.com/dvgrdwofp/image/upload/v1762879924/WhatsApp_Image_2025-11-10_at_3.33.59_PM_1_vn73u0.jpg',
       'https://res.cloudinary.com/dvgrdwofp/image/upload/v1762879925/WhatsApp_Image_2025-11-10_at_3.34.00_PM_zhlkdv.jpg',
@@ -51,6 +42,17 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     category: 'Belts',
   }
+{
+    id: 3,
+    name: 'Black Leather Driving Gloves',
+    description: 'Sleek black leather gloves featuring perforated detailing and a secure strap closure — perfect for stylish and comfortable driving.',
+    imageUrls: [
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763044292/WhatsApp_Image_2025-11-13_at_12.43.43_PM_hnb27e.jpg'
+    ],
+    category: 'Gloves',
+  }
+
+  
 ];
 
 const socialIconClasses = "h-6 w-6 text-brand-light group-hover:text-brand-tan transition-colors duration-300";
