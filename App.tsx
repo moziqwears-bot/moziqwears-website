@@ -34,9 +34,15 @@ const App: React.FC = () => {
     }
 
     if (route.startsWith('#/category/')) {
-      const category = route.replace('#/category/', '');
-      const categoryName = category.charAt(0).toUpperCase() + category.slice(1);
-      const categoryProducts = products.filter(p => p.category.toLowerCase() === category);
+      const categorySlug = route.replace('#/category/', '');
+      const decodedSlug = decodeURIComponent(categorySlug);
+      
+      const categoryProducts = products.filter(p => p.category.toLowerCase() === decodedSlug);
+      
+      // Get original category name from the first product to preserve casing
+      const categoryName = categoryProducts.length > 0 
+        ? categoryProducts[0].category 
+        : (decodedSlug.charAt(0).toUpperCase() + decodedSlug.slice(1));
       return <CategoryPage categoryName={categoryName} products={categoryProducts} />;
     }
 
