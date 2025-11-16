@@ -80,7 +80,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     imageUrls: [
       'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763305550/WhatsApp_Image_2025-11-15_at_7.25.22_PM_mkivn0.jpg',
     ],
-      category: 'KeyChains',
+      category: 'Key Chains',
   },
   
 ];
