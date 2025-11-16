@@ -82,7 +82,15 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
       category: 'Key Chains',
   },
-  
+  {
+    id: 7,
+    name: 'Leather Keychains',
+    description: 'Durable leather keychains in assorted colors, featuring strong metal rings and neat contrast stitching for a stylish everyday accessory.',
+    imageUrls: [
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763305550/WhatsApp_Image_2025-11-15_at_7.25.22_PM_mkivn0.jpg',
+    ],
+      category: 'Key Chains',
+  },
 ];
 
 const socialIconClasses = "h-6 w-6 text-brand-light group-hover:text-brand-tan transition-colors duration-300";
