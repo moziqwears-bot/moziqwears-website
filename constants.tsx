@@ -91,6 +91,18 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
       category: 'Card Holder',
   },
+  {
+    id: 8,
+    name: 'Chef Leather Apron',
+    description: 'Large chef apron made from premium cow leather (1.75 mm), sized 85cm × 65cm, featuring adjustable straps and practical pockets. Also available in cloth for a lighter option.',
+    imageUrls: [
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763997074/WhatsApp_Image_2025-11-24_at_7.46.18_PM_1_nzhhbq.jpg',
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763997075/WhatsApp_Image_2025-11-24_at_7.46.17_PM_tfg0fb.jpg',
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763997074/WhatsApp_Image_2025-11-24_at_7.46.18_PM_g5ytba.jpg',
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763997074/WhatsApp_Image_2025-11-24_at_7.46.17_PM_1_aqqrzt.jpg'
+    ],
+      category: 'Leather Apron',
+  },
   
 ];
 
