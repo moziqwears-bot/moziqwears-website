@@ -82,6 +82,15 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
       category: 'Key Chains',
   },
+  {
+    id: 7,
+    name: 'Brown Leather Card Holder',
+    description: 'Slim and elegant card holder crafted from smooth brown leather — features 2 card slots and 1 cash pocket for everyday convenience.',
+    imageUrls: [
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1763984743/WhatsApp_Image_2025-11-24_at_2.52.14_PM_zuv49s.jpg',
+    ],
+      category: 'Card Holder',
+  },
   
 ];
 
