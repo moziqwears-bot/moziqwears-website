@@ -103,6 +103,31 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
       category: 'Leather Apron',
   },
+  {
+    id: 9,
+    name: 'Round Neck Raglan T-Shirt',
+    description: 'Comfortable raglan-style round neck T-shirt made from soft interlock 140 GSM 100% polyester fabric, featuring a sleek Black + Grey color combination for everyday active wear.',
+    imageUrls: [
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1764081716/WhatsApp_Image_2025-11-25_at_3.15.53_PM_1_pogqnu.jpg',
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1764081716/WhatsApp_Image_2025-11-25_at_3.15.53_PM_flsnyc.jpg',
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1764081716/WhatsApp_Image_2025-11-25_at_3.15.54_PM_n2almt.jpg',
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1764081716/WhatsApp_Image_2025-11-25_at_3.15.54_PM_1_gpqj2a.jpg',
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1764081716/WhatsApp_Image_2025-11-25_at_3.15.59_PM_gfgpj2.jpg'
+    ],
+      category: 'T-Shirt',
+  },
+  {
+    id: 10,
+    name: 'Professional Goalkeeper Gloves',
+    description: 'High-performance goalkeeper gloves designed for maximum grip and protection, made using 100% original German professional contact grip, 100% original German latex, and 100% original German giga materials, all fully authentic and German-made for top-level play.',
+    imageUrls: [
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1764082054/WhatsApp_Image_2025-11-25_at_3.57.09_PM_fve29l.jpg',
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1764082054/WhatsApp_Image_2025-11-25_at_3.57.08_PM_sdznon.jpg',
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1764082056/WhatsApp_Image_2025-11-25_at_3.57.07_PM_dca0gu.jpg',
+      'https://res.cloudinary.com/dvgrdwofp/image/upload/v1764082056/WhatsApp_Image_2025-11-25_at_3.57.10_PM_y3hgli.jpg'
+    ],
+      category: 'Gloves',
+  },
   
 ];
 
